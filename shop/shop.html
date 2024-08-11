@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XXXXLLLLL Online Shop</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>XXXXLLLLL Shop</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#about">Über uns</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="#cart">Warenkorb</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Willkommen bei XXXXLLLLL</h2>
+            <p>Die besten XXL-Mode für dich!</p>
+            <a href="#shop" class="cta">Jetzt entdecken</a>
+        </div>
+    </section>
+
+    <!-- Produktkategorien -->
+    <section id="shop" class="categories">
+        <div class="container">
+            <h2>Unsere Kategorien</h2>
+            <div class="category-list">
+                <div class="category-item">
+                    <img src="images/category1.jpg" alt="Kleidung">
+                    <h3>Kleidung</h3>
+                </div>
+                <div class="category-item">
+                    <img src="images/category2.jpg" alt="Accessoires">
+                    <h3>Accessoires</h3>
+                </div>
+                <div class="category-item">
+                    <img src="images/category3.jpg" alt="Schuhe">
+                    <h3>Schuhe</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Empfohlene Produkte -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Unsere Bestseller</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="images/product1.jpg" alt="XXL T-Shirt">
+                    <h3>XXL T-Shirt</h3>
+                    <p>29,99 €</p>
+                    <a href="#checkout" class="btn">In den Warenkorb</a>
+                </div>
+                <div class="product-item">
+                    <img src="images/product2.jpg" alt="XXL Hose">
+                    <h3>XXL Hose</h3>
+                    <p>49,99 €</p>
+                    <a href="#checkout" class="btn">In den Warenkorb</a>
+                </div>
+                <div class="product-item">
+                    <img src="images/product3.jpg" alt="XXL Jacke">
+                    <h3>XXL Jacke</h3>
+                    <p>79,99 €</p>
+                    <a href="#checkout" class="btn">In den Warenkorb</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section id="checkout" class="checkout">
+        <div class="container">
+            <h2>Checkout</h2>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <h3>Lieferadresse</h3>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="address">Adresse:</label>
+                <input type="text" id="address" name="address" required>
+                <label for="city">Stadt:</label>
+                <input type="text" id="city" name="city" required>
+                <label for="postal">Postleitzahl:</label>
+                <input type="text" id="postal" name="postal" required>
+
+                <h3>Zahlungsmethoden</h3>
+                <div class="payment-methods">
+                    <label>
+                        <input type="radio" name="payment" value="paypal" checked>
+                        <img src="images/paypal.png" alt="PayPal">
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="credit-card">
+                        <img src="images/credit-card.png" alt="Kreditkarte">
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="bank-transfer">
+                        <img src="images/bank-transfer.png" alt="Banküberweisung">
+                    </label>
+                </div>
+
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID">
+                
+                <input type="submit" class="btn" value="Jetzt bezahlen">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 XXXXLLLLL Online Shop. Alle Rechte vorbehalten.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Impressum</a></li>
+                    <li><a href="#">Datenschutz</a></li>
+                    <li><a href="#">AGB</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
